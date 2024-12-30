@@ -8,6 +8,8 @@ img {
 }
 body {
   font-family: "Open Sans", serif;
+  width: 100%;
+  overflow-x: hidden;
 }
 .logo {
   width: 100px;
@@ -24,6 +26,7 @@ li {
   list-style-type: none;
 }
 .container {
+  overflow: hidden;
   max-width: 1200px;
   margin: 0 auto;
   padding-inline: 15px;
@@ -109,6 +112,10 @@ li {
   left: 0;
   bottom: 0;
 }
+
+section {
+  height: 100vh;
+}
 @media (max-width: 995px) {
   .hero-container {
     flex-direction: column;
@@ -131,7 +138,7 @@ li {
     align-items: center;
     justify-content: center;
     position: fixed;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.8);
     width: 100%;
     height: calc(100vh - 80px);
     left: 0;
