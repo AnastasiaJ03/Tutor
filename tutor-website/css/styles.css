@@ -95,7 +95,7 @@ li {
 .hero-text h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
-  width: 400px;
+  max-width: 400px;
 }
 .hero-text p {
   font-size: 1.2rem;
