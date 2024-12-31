@@ -62,7 +62,10 @@ section {
 .main-heading {
   text-align: center;
 }
-
+.navbar.active {
+  background: rgba(235, 77, 85, 0.8);
+  backdrop-filter: blur(10px);
+}
 .navbar {
   z-index: 100;
   display: flex;
@@ -73,6 +76,7 @@ section {
   height: 80px;
   position: fixed;
   /* padding-block: 20px; */
+  transition: background 0.3s ease;
 }
 .navbar a {
   color: #fff;
