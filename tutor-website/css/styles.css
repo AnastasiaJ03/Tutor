@@ -36,6 +36,22 @@ section {
 }
 .main-heading {
   margin-bottom: 40px;
+  text-align: center;
+}
+.main-heading-left {
+  text-align: left;
+}
+.main-heading-left .title:after {
+  translate: 0;
+  left: 0;
+}
+.flex-block {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+.flex-block-inverted {
+  flex-direction: row-reverse;
 }
 .title {
   font-size: 2rem;
@@ -59,8 +75,21 @@ section {
   font-size: 18px;
   color: #272d35;
 }
-.main-heading {
-  text-align: center;
+.btn {
+  display: block;
+  background: #ffc05a;
+  padding: 1.3rem 2.3rem;
+  border-radius: 32px;
+  font-size: 1rem;
+  color: #272d35;
+  transition: all 0.3s ease;
+}
+.btn-border:hover {
+  border: 1px solid #fff;
+}
+.btn:hover {
+  background: #fc5d66;
+  color: #fff;
 }
 .navbar.active {
   background: rgba(235, 77, 85, 0.8);
@@ -120,14 +149,7 @@ section {
 .hero-text {
   flex: 1;
 }
-.hero-text button {
-  display: block;
-  background: #ffc05a;
-  padding: 1.3rem 2.3rem;
-  border-radius: 32px;
-  font-size: 1rem;
-  color: #272d35;
-}
+
 .hero-text h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
@@ -249,7 +271,8 @@ section {
   grid-template-columns: repeat(3, auto);
   gap: 2rem;
 }
-.skills-item i {
+.skills-item i,
+.info i {
   color: #fc5d66;
   margin-right: 1rem;
 }
@@ -262,6 +285,14 @@ section {
   padding: 2rem 1.75rem;
   line-height: 1.6rem;
 }
+
+.info ul {
+  margin-bottom: 2rem;
+}
+.info ul li {
+  line-height: 2rem;
+}
+
 @media (max-width: 1200px) {
   .gallery {
     grid-template-columns: repeat(3, auto);
@@ -308,6 +339,9 @@ section {
   }
   .skills-items {
     grid-template-columns: repeat(2, auto);
+  }
+  .flex-block {
+    flex-direction: column;
   }
 }
 @media (max-width: 768px) {
