@@ -293,6 +293,39 @@ section {
   line-height: 2rem;
 }
 
+.stats {
+  background: url("../images/stats-background.jpg") no-repeat center
+    center/cover;
+  padding-top: 4rem;
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+  padding-bottom: 0;
+}
+.stats-items {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+.stats-item h3 {
+  font-size: 3rem;
+}
+.stats-item small {
+  font-size: 12px;
+}
+.stats p {
+  font-size: 1.2rem;
+  max-width: 500px;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+.stats button {
+  margin: 0 auto;
+}
+.flex-block-left img {
+  width: 80%;
+}
 @media (max-width: 1200px) {
   .gallery {
     grid-template-columns: repeat(3, auto);
@@ -375,5 +408,9 @@ section {
   }
   .audience-left {
     display: none;
+  }
+  .stats-items {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
