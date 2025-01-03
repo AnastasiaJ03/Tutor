@@ -71,6 +71,9 @@ section {
   background: #fc5d66;
   translate: -50% 0;
 }
+.title-no-line::after {
+  display: none;
+}
 .subtitle {
   font-size: 18px;
   color: #272d35;
@@ -325,6 +328,31 @@ section {
 }
 .flex-block-left img {
   width: 80%;
+}
+
+.subscribe {
+  margin-top: 4rem;
+}
+.subscribe-container {
+  background-color: #f9fafb;
+  padding: 4rem 2rem;
+}
+.subscribe p {
+  max-width: 650px;
+  margin: 0 auto;
+}
+.subscribe input {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 400px;
+  padding: 18px 12px;
+  border-radius: 50px;
+}
+.subscribe button {
+  margin: 0 auto;
+  margin-top: 2rem;
 }
 @media (max-width: 1200px) {
   .gallery {
