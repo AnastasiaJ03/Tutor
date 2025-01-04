@@ -353,6 +353,49 @@ section {
   margin: 0 auto;
   margin-top: 2rem;
 }
+
+.social-media {
+  text-align: center;
+  padding: 6rem 2rem;
+  background: #272d35;
+  color: #fff;
+  border-bottom: 1px solid #384653;
+}
+.social-media-top p {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+.social-media i {
+  color: #fff;
+  margin-right: 1rem;
+}
+.social-media i:hover {
+  color: #ffc05a;
+}
+
+.footer {
+  padding: 3rem 2rem;
+  background: #272d35;
+  color: #fff;
+}
+.footer a {
+  color: #fff;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-links {
+  display: flex;
+  gap: 1rem;
+}
+.footer-links a {
+  line-height: 4rem;
+}
+.footer-links li a:hover {
+  color: #ffc05a;
+}
 @media (max-width: 1200px) {
   .gallery {
     grid-template-columns: repeat(3, auto);
@@ -427,6 +470,11 @@ section {
   }
   .skills-items {
     grid-template-columns: repeat(1, auto);
+  }
+  .footer-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
   }
 }
 @media (max-width: 580px) {
