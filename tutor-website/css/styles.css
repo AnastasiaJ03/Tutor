@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -33,6 +36,9 @@ section {
   max-width: 1200px;
   margin: 0 auto;
   padding-inline: 15px;
+}
+.container-sm {
+  max-width: 1000px;
 }
 .main-heading {
   margin-bottom: 40px;
@@ -86,6 +92,9 @@ section {
   font-size: 1rem;
   color: #272d35;
   transition: all 0.3s ease;
+}
+.btn-full {
+  width: 100%;
 }
 .btn-border:hover {
   border: 1px solid #fff;
@@ -396,6 +405,51 @@ section {
 }
 .footer-links li a:hover {
   color: #ffc05a;
+}
+
+/* COntact */
+.contact {
+  padding-top: 120px;
+  background: #fc5d66;
+  margin-bottom: 4rem;
+}
+.contact h2 {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding-left: 100px;
+}
+
+.form input,
+.form textarea {
+  display: block;
+  padding: 1.2rem 1rem;
+  width: 100%;
+  border: 1px solid #ccc;
+  margin: 1.5rem 0;
+  font-size: 18px;
+}
+
+.location h2 {
+  margin-bottom: 0;
+}
+.location p {
+  color: #272d35;
+  font-size: 16px;
+  margin-bottom: 2rem;
+}
+.location .map {
+  position: relative;
+  height: 500px;
+  /* padding-bottom: 50%; */
+}
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 @media (max-width: 1200px) {
   .gallery {
