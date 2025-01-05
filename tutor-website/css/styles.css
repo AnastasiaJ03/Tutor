@@ -543,4 +543,7 @@ section {
     flex-wrap: wrap;
     justify-content: center;
   }
+  .contact h2 {
+    padding-left: 0;
+  }
 }
